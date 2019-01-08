@@ -21,4 +21,8 @@ router.get("/bad", (req, res) => {
   res.send({ error: "this resource was not found" });
 });
 
+router.get("/projects", (req, res) => {
+  res.render("projects", { title: "Portfolio", author: "Konrad" });
+});
+
 module.exports = router;
